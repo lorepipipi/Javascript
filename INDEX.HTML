@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar de color con java script</title>
+</head>
+<body>
+    <h1>Margarita mi patrona</h1>
+    <button onclick="cambiarcolor()">Cambiar color de fondo</button>
+
+    <script>
+        function cambiarcolor(){
+            //Generar un color aleatorio en formato RGB
+            alert('Pa cuando repetimos margarita');
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            var colorRGB = `rgb(${r},${g},${b})`;
+
+
+            //Cambiar el color de fondo de la pagina
+            document.body.style.background = colorRGB;
+            console.log(colorRGB);
+            
+
+        }
+    </script>
+</body>
+</html>
